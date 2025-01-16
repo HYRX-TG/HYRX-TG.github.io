@@ -1,1 +1,0 @@
-# HYRX-TG.github.io

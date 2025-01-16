@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>1、k8s介绍等</title>
+      <link href="/2024/11/13/1%E3%80%81k8s%E4%BB%8B%E7%BB%8D%E7%AD%89/"/>
+      <url>/2024/11/13/1%E3%80%81k8s%E4%BB%8B%E7%BB%8D%E7%AD%89/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="一、k8s介绍等"><a href="#一、k8s介绍等" class="headerlink" title="一、k8s介绍等"></a>一、k8s介绍等</h2><h2 id="结构图"><a href="#结构图" class="headerlink" title="结构图"></a>结构图</h2><p><img src="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_6b8621f97808d6a7af7dace1e9b95dcd.png" alt="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_6b8621f97808d6a7af7dace1e9b95dcd.png"></p><h2 id="k8s笔记"><a href="#k8s笔记" class="headerlink" title="k8s笔记"></a><strong>k8s笔记</strong></h2><p><strong>NameSpace</strong>：命名空间，用来隔离 <strong>pod</strong> 的运行环境</p><h2 id="集群类型"><a href="#集群类型" class="headerlink" title="集群类型"></a>集群类型</h2><p><strong>一主多从与多主多从</strong> 生产环境使用 <strong>多主多从</strong></p><p>学习 <strong>kubernetes</strong> 的核心，就是学习如何对集群上的<code>Pod、Pod控制器、Service、存储</code>等各种资源进行操作</p><p><img src="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_a9943ac676cc7c29a16e7c0293ce8047.png" alt="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_a9943ac676cc7c29a16e7c0293ce8047.png"></p><h4 id="2-7集群部署完成测试（成功后则部署成功）"><a href="#2-7集群部署完成测试（成功后则部署成功）" class="headerlink" title="2.7集群部署完成测试（成功后则部署成功）"></a><code>2.7</code>集群部署完成测试（成功后则部署成功）</h4><h5 id="2-7-1-创建一个nginx服务"><a href="#2-7-1-创建一个nginx服务" class="headerlink" title="2.7.1 创建一个nginx服务"></a>2.7.1 创建一个nginx服务</h5><p>kubectl create deployment nginx  –image=registry.cn-hangzhou.aliyuncs.com/zznn/mycentos:nginx-latest</p><h5 id="2-7-2、暴露端口"><a href="#2-7-2、暴露端口" class="headerlink" title="2.7.2、暴露端口"></a>2.7.2、暴露端口</h5><p>kubectl expose deploy nginx  –port=80 –target-port=80  –type=NodePort</p><h5 id="2-7-3、查看服务"><a href="#2-7-3、查看服务" class="headerlink" title="2.7.3、查看服务"></a>2.7.3、查看服务</h5><p><strong>kubectl get pod,svc</strong></p><h5 id="2-7-4、查看pod"><a href="#2-7-4、查看pod" class="headerlink" title="2.7.4、查看pod"></a>2.7.4、查看pod</h5><p><img src="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_4e3d1924d8a957214363670284e29bb0.png" alt="https://github.com/zznn-cloud/zznn-cloud-blog-images/raw/main/Qexo/24/11/image_4e3d1924d8a957214363670284e29bb0.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> k8s </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> k8s </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
