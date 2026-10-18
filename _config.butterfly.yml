@@ -1,0 +1,649 @@
+# Navigation bar settings (導航欄設置)
+# see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
+# --------------------------------------
+
+nav:
+  logo: https://avatars.githubusercontent.com/u/179015815
+  display_title: true
+  fixed: false # fixed navigation bar
+
+# Menu 目錄
+menu:
+  主页: / || iconfont icon-zhuye-
+  项目: /projects/ || fas fa-laptop-code
+  文章 || iconfont icon-09wenzhang || hide:
+    分类: /categories/ || iconfont icon-fenlei
+    标签: /tags/ || iconfont icon-biaoqian
+    归档: /archives/ || iconfont icon-guidang
+  关于: /about/ || iconfont icon-zhuye_chengchangjilu
+  友链: /link/    || iconfont icon-kafei
+  音乐: /music/  || iconfont icon-juzipian
+
+# Code Blocks (代碼相關)
+# --------------------------------------
+highlight_theme: mac
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+highlight_height_limit: 200
+code_word_wrap: true
+
+# Social Settings (社交圖標設置)
+social:
+  fab fa-github: https://github.com/HYRX-TG || Github || '#24292e'
+  fas fa-envelope: mailto:3142824371@qq.com || Email || '#4a7dbe'
+
+# Image (圖片設置)
+# --------------------------------------
+
+# Favicon(網站圖標)
+favicon: https://avatars.githubusercontent.com/u/179015815
+
+# Avatar (头像)
+avatar:
+  img: https://avatars.githubusercontent.com/u/179015815
+  effect: false
+
+# Disable all banner image
+disable_top_img: false
+
+# The banner image of home page
+index_img: /img/山水余晖.png
+
+# If the banner of page not setting, it will show the top_img
+default_top_img: https://i.ibb.co/jPP5HW6V/IMG-6838.JPG
+
+# The banner image of archive page
+archive_img: https://i.ibb.co/nNfVKqh4/IMG-6839.JPG
+
+# If the banner of tag page not setting, it will show the top_img
+tag_img: https://i.ibb.co/Y4rSbzPt/IMG-6837.JPG
+
+# The banner image of tag page
+tag_per_img: https://i.ibb.co/jPP5HW6V/IMG-6838.JPG
+
+# If the banner of category page not setting, it will show the top_img
+category_img: https://i.ibb.co/nNfVKqh4/IMG-6839.JPG
+
+# The banner image of category page
+category_per_img: https://i.ibb.co/Y4rSbzPt/IMG-6837.JPG
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  position: both
+  default_cover:
+    - /img/山水余晖.png
+    - /img/落日.jpg
+    - /img/海上生明月.jpg
+
+# Replace Broken Images (替換無法顯示的圖片)
+error_img:
+  flink: /img/friend_404.gif
+  post_page: /img/404.jpg
+
+# A simple 404 page
+error_404:
+  enable: false
+  subtitle: 'Page Not Found'
+  background: "url(https://i.ibb.co/Y4rSbzPt/IMG-6837.JPG)"
+post_meta:
+  page:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: both
+    date_format: relative
+    categories: true
+    tags: true
+    label: true
+
+# Display the article introduction on homepage
+index_post_content:
+  method: 2
+  length: 500
+
+# anchor
+anchor:
+  button:
+    enable: false
+    always_show: false
+    icon:
+  auto_update: false
+
+# figcaption (圖片描述文字)
+photofigcaption: false
+
+# copy settings
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 1000
+
+# Post
+# --------------------------------------
+
+# toc (目录)
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: true
+  author_href:
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Sponsor/reward
+reward:
+  enable: false
+  QR_code:
+    - img: /img/wechat.jpg
+      link:
+      text: 微信
+    - img: /img/alipay.jpg
+      link:
+      text: 支付宝
+
+# Post edit
+post_edit:
+  enable: false
+  url:
+
+# Related Articles
+related_post:
+  enable: true
+  limit: 3
+  date_type: created
+
+# post_pagination (分頁)
+post_pagination: 1
+
+# Displays outdated notice for a post (文章过期提醒)
+noticeOutdate:
+  enable: false
+  style: flat
+  limit_day: 200
+  position: top
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+
+# Footer Settings
+# --------------------------------------
+footer:
+  owner:
+    enable: true
+    since: 2023
+  custom_text: 河岳日星的博客 | 运维工程师 & AI算法工程师
+  copyright: true
+
+# aside (側邊欄)
+# --------------------------------------
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 运维工程师 | AI算法学习者 | 热爱写作与技术分享
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 关注 河岳日星的 GitHub
+      link: https://github.com/HYRX-TG
+  card_announcement:
+    enable: true
+    content: 欢迎来到河岳日星的博客，记录技术与成长
+  card_recent_post:
+    enable: true
+    limit: 2
+    sort: date
+    sort_order:
+  card_categories:
+    enable: false
+    limit: 8
+    expand: none
+    sort_order:
+  card_tags:
+    enable: true
+    limit: 40
+    color: true
+    orderby: random
+    order: 1
+    sort_order:
+  card_archives:
+    enable: false
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+    sort_order:
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+  card_post_series:
+    enable: true
+    orderBy: 'date'
+    order: -1
+  card_hitokoto:
+    enable: true
+
+# busuanzi count for PV / UV in site
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# Time difference between publish date and now
+runtimeshow:
+  enable: true
+  publish_date: 1/1/2025 00:00:00
+
+# Aside widget - Newest Comments
+newest_comments:
+  enable: false
+  sort_order:
+  limit: 4
+  storage: 10
+  avatar: true
+
+# Bottom right button (右下角按鈕)
+# --------------------------------------
+
+# Conversion between Traditional and Simplified Chinese (簡繁轉換)
+translate:
+  enable: true
+  default: 简
+  defaultEncoding: 1
+  translateDelay: 0
+  msgToTraditionalChinese: '繁'
+  msgToSimplifiedChinese: '簡'
+
+# Read Mode (閲讀模式)
+readmode: true
+
+# dark mode
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+  start:
+  end:
+
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
+
+# Don't modify the following settings unless you know how they work
+rightside_item_order:
+  enable: false
+  hide:
+  show:
+
+# Math (數學)
+# --------------------------------------
+
+# MathJax
+mathjax:
+  enable: false
+  per_page: false
+
+# KaTeX
+katex:
+  enable: false
+  per_page: false
+  hide_scrollbar: true
+
+# search (搜索)
+# --------------------------------------
+
+# Algolia search
+algolia_search:
+  enable: false
+  hits:
+    per_page: 6
+
+# Local search
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+
+# Docsearch
+docsearch:
+  enable: false
+  appId:
+  apiKey:
+  indexName:
+  option:
+
+# Share System (分享)
+# --------------------------------------
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq
+
+addtoany:
+  enable: false
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+
+# Comments System
+# --------------------------------------
+comments:
+  use:
+  text: true
+  lazyload: true
+  count: false
+  card_post_count: false
+
+# valine
+valine:
+  appId:
+  appKey:
+  avatar: monsterid
+  serverURLs:
+  bg:
+  visitor: true
+  option:
+
+# Chat Services
+# --------------------------------------
+chat_btn: false
+chat_hide_show: false
+
+# Analysis
+# --------------------------------------
+baidu_analytics:
+google_analytics:
+cloudflare_analytics:
+microsoft_clarity:
+
+# Advertisement
+# --------------------------------------
+google_adsense:
+  enable: false
+  auto_ads: true
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  client:
+  enable_page_level_ads: true
+
+# Verification (站長驗證)
+# --------------------------------------
+site_verification:
+
+# Beautify/Effect (美化/效果)
+# --------------------------------------
+
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+
+index_site_info_top:
+index_top_img_height:
+
+category_ui:
+tag_ui:
+
+# Website Background
+# Website Background
+background: url(/img/山水余晖.png)
+# Footer Background
+footer_bg: true
+
+mask:
+  header: true
+  footer: true
+
+rightside_bottom:
+
+enter_transitions: true
+
+# Typewriter Effect
+activate_power_mode:
+  enable: false
+  colorful: true
+  shake: true
+  mobile: false
+
+# Background effects
+# --------------------------------------
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+  mobile: false
+
+canvas_fluttering_ribbon:
+  enable: false
+  mobile: false
+
+canvas_nest:
+  enable: false
+  color: '0,0,255'
+  opacity: 0.7
+  zIndex: -1
+  count: 99
+  mobile: false
+
+fireworks:
+  enable: false
+  zIndex: 9999
+  mobile: false
+
+click_heart:
+  enable: false
+  mobile: false
+
+ClickShowText:
+  enable: false
+  text:
+    - 保持热爱
+    - 奔赴山海
+    - 止于至善
+  fontSize: 15px
+  random: false
+  mobile: false
+
+display_mode: light
+
+beautify:
+  enable: false
+  field: site
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: "#F47466"
+
+# Global font settings
+font:
+  global-font-size:
+  code-font-size:
+  font-family:
+  code-font-family:
+
+blog_title_font:
+  font_link:
+  font-family:
+
+hr_icon:
+  enable: true
+  icon:
+  icon-top:
+
+# the subtitle on homepage
+subtitle:
+  enable: true
+  effect: true
+  loop: true
+  source: false
+  sub:
+    - 运维工程师 | AI算法学习者 | 专注Python、Linux、AI与数据分析
+    - 河岳日星，写有温度的技术笔记
+
+# Loading Animation
+preloader:
+  enable: false
+  source: 1
+  pace_css_url:
+
+# wordcount
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# Lightbox
+# --------------------------------------
+medium_zoom: false
+fancybox: true
+
+# Tag Plugins settings
+# --------------------------------------
+series:
+  enable: true
+  orderBy: 'title'
+  order: 1
+  number: true
+
+abcjs:
+  enable: false
+  per_page: true
+
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark
+
+note:
+  style: flat
+  icons: true
+  border_radius: 3
+  light_bg_offset: 0
+
+# other
+# --------------------------------------
+pjax:
+  enable: true
+  exclude:
+
+aplayer:
+  enable: true
+  asset_inject: false
+
+aplayerInject:
+  enable: true
+  per_page: true
+
+snackbar:
+  enable: true
+  position: top-right
+  bg_light: '#49b1f5'
+  bg_dark: '#121212'
+
+instantpage: true
+
+pangu:
+  enable: false
+  field: site
+
+lazyload:
+  enable: true
+  loadingImg:
+  field: site
+  placeholder:
+  blur: false
+  isSPA: true
+
+Open_Graph_meta:
+  enable: false
+  option:
+
+css_prefix: true
+
+# Inject
+inject:
+  head:
+    # 👇 这里只保留这一段，把其他乱七八糟的先注释掉或删掉
+    - '<style type="text/css">
+        /* 音乐播放器样式保留 */
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {left: -66px !important;}
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {left: 0 !important;}
+
+        /* ===================================== */
+        /*  核心修复：锁定落日余晖背景  */
+        /* ===================================== */
+        body {
+          background: url(/img/山水余晖.png) !important;          
+          background-size: cover !important;
+          background-position: center !important;
+          background-attachment: fixed !important;
+          background-repeat: no-repeat !important;
+        }
+        /* 强制让页面容器透明，露出背景 */
+        #layout, #body_bg, #web_bg {
+          background: transparent !important;
+        }
+      </style>'
+
+    # 下面这些样式表先暂时注释掉（或者保留，不影响，主要是避免冲突）
+    # - <link rel="stylesheet" href="/css/pl.css">
+    # - <link rel="stylesheet" href="/css/transpancy.css">
+    # - <link rel="stylesheet" href="/css/custom.css">
+    # ... 其他 link 也先注释掉 ...    
+    - <link rel="stylesheet" href="/css/pl.css">
+    - <link rel="stylesheet" href="/css/transpancy.css">
+    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/css/menu.css">
+    - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="/css/cat.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4426032_wnvg24di0w.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/daohang.css">
+  bottom:
+    - <div class="aplayer no-destroy" data-id="8456378003" data-server="netease" data-type="playlist" data-fixed="true" data-lrcType="-1" data-order="list"> </div>
+
+live2d:
+  enable: false
+  mobile:
+    show: true
+
+# CDN
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: false
+  custom_format:
+  option:
+
+# 主页卡片样式
+index_card_style: multicard

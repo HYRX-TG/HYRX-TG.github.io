@@ -1,0 +1,106 @@
+- class_name: 常用链接❥(^_-)
+  class_desc: 那些人，那些事
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、簡單且強大的網誌框架、
+
+    - name: Gmail
+      link: https://mail.google.com/mail/u/0/?hl=zh-TW
+      avatar: /img/google.png
+      descr: Gmail邮箱
+      
+    - name: IT-TOOLS
+      link: https://tools.captainz.cc/
+      avatar: 
+      descr: IT工具箱 
+
+- class_name: 网站╭◜◝ ͡◜◝╮
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: Youtube
+      link: https://www.youtube.com/
+      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+      descr: 視頻網站
+
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中國最大社交分享平台
+
+    - name: Twitter
+      link: https://twitter.com/
+      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+      descr: 社交分享平台
+      
+- class_name: 自有小站╭◜◝ ͡◜◝╮
+  class_desc: 自动化助手
+  link_list:
+    - name: Qexo
+      link: https://qexo.zznnwn.cloudns.biz/
+      avatar: https://unpkg.com/qexo-static@2.2.3/qexo/images/icon.png
+      descr: Hexo博客管理平台
+      
+    - name: ZzNnWn.
+      link: https://gegewu-cloud.github.io/
+      avatar: https://gegewu-cloud.github.io/img/zznnlogo.webp
+      descr: 博主另一小站  
+
+    - name: ChatGPT3.5
+      link: https://chat.openai.com/
+      avatar: https://wn-apple-teawine.fun/img/chatgpt.jpg
+      descr: AI助手
+      
+    - name: vercel-gpt
+      link: https://zznngpt.zznnwn.cloudns.biz/
+      avatar: https://wn-apple-teawine.fun/img/chatgpt.jpg
+      descr: vercel构建    
+      
+- class_name: 推荐的小站╭◜◝ ͡◜◝╮
+  class_desc: 优秀博主
+  link_list:
+    - name: YYDS-SPACE
+      link: https://www.yyds.space/
+      avatar: https://www.whbblog.cn/other/touxiang.jpg
+      descr: YYDS-SPACE的小站
+      
+    - name: 孤喵
+      link: https://www.gucat.vip/
+      avatar: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/head.jpg?inline=true
+      descr: k8s优秀站长
+      
+    - name: Fomalhaut
+      link: https://www.fomal.cc/
+      avatar: https://sourcebucket.s3.bitiful.net/img/avatar.webp
+      descr: 小站魔改系列
+
+    - name: 海拥
+      link: https://haiyong.site/
+      avatar: https://haiyong.site/img/favicon.png
+      descr: 暂无
+
+    - name: 此时星辰非昨夜
+      link: https://chb-cloud.github.io/
+      avatar: https://chb-cloud.github.io/img/%E5%A4%B4%E5%83%8F2.jpg
+      descr: 在欲望中自律，在落魄中自愈|
+      
+    - name: 小陈运维
+      link: https://www.oiox.cn/index.php
+      avatar: http://www.oiox.cn/1.jpg
+      descr: chenby
+
+    - name: 黄金月河3.0
+      link: https://www.nerubian.cn/
+      avatar: https://www.nerubian.cn/upload/a7d5343148182ccf4b98178adb5bebb2(1).png
+      descr: linux大佬
+      
+    - name: Github加速器
+      link: http://github.zznnwn.cloudns.biz
+      avatar: https://wn-apple-teawine.fun/img/github.png
+      descr: 支持Github 支持release、archive以及文件zip格式等加速下载
+      
+    - name: 特伦苏
+      link: https://fenghen0918.github.io/2020/10/22/hexo/hexo-bo-ke-you-hua-pian-matery-yi/
+      avatar: https://fenghen0918.github.io/medias/sulog.png
+      descr: 闪烁之狐主题颜色设置

@@ -1,0 +1,47 @@
+name: Deploy Hexo to GitHub Pages
+
+# 触发条件：推送 source 分支，或手动触发
+on:
+  push:
+    branches: [source]
+  workflow_dispatch:
+
+# 允许工作流把构建产物写回仓库的 gh-pages 分支
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 源码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 用 Hexo 生成静态站点
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      # 纯静态站点，禁掉 Jekyll 处理，避免下划线文件被跳过
+      - name: 添加 .nojekyll
+        run: touch public/.nojekyll
+
+      # 把 public/ 推到 gh-pages 分支（GitHub Pages 设为「Deploy from a branch → gh-pages」后即自动上线）
+      - name: 部署到 gh-pages 分支
+        run: |
+          cd public
+          git init --quiet
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit --quiet -m "Deploy: ${{ github.sha }}"
+          git push --force --quiet "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:gh-pages

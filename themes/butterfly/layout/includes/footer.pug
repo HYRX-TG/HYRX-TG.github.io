@@ -1,0 +1,94 @@
+#footer-wrap
+  #ft
+    .ft-item-1
+      .t-top
+        .t-t-l
+          p.ft-t.t-l-t 说点什么
+          .bg-ad
+            div
+              | 静水流深!
+            .btn-xz-box
+              a.btn-xz(href='https://gegewu-cloud.github.io') 晒在深海里.
+        .t-t-r
+          p.ft-t.t-l-t 修仙导航
+          ul.ft-links
+            li
+              a(href='https://gegewu-cloud.github.io/2023/08/12/hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/') 建站指南
+              a(href='http://zznn-cloud.github.io/link/') 网址导航
+            li
+              a(href='http://zznn-cloud.github.io/2024/02/01/%E8%B5%9E%E5%8A%A9%E5%A2%99/') 来杯咖啡
+              a(href='https://gegewu-cloud.github.io/2023/05/23/%E7%95%99%E8%A8%80%E6%9D%BF/') 留点什么
+            li
+              a(href='https://zznn-cloud.github.io/2024/02/01/简历/') 简历
+              a(href='https://gegewu-cloud.github.io/2023/05/22/%E5%85%B3%E4%BA%8E/') 关于博主  
+            li
+              a(href='http://zznn-cloud.github.io/categories/') 文章分类
+              a(href='http://zznn-cloud.github.io/tags/') 文章标签
+            li
+              a(href='http://zznn-cloud.github.io/archives/') 文章归档
+              a(href='https://gegewu-cloud.github.io/2023/10/04/%E5%9B%BE%E5%BA%93/') 我的相册
+            li
+              a(href='https://drive.zznnwn.cloudns.biz/onedrive/%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8/%E5%8A%A8%E6%BC%AB/') 一些壁纸
+        .t-t-r
+          p.ft-t.t-l-t 自有工具与证书
+          ul.ft-links
+            li
+              a(href='https://Qexo.zznnwn.cloudns.biz/') Qexo
+              a(href='https://zgpt.zznnwn.cloudns.biz/') ZPT.
+              a(href='https://lchat.zznnwn.cloudns.biz') LobeChat.
+              a(href='https://images.zznnwn.cloudns.biz/') Blazeb2
+              a(href='https://drive.zznnwn.cloudns.biz/') ClouDreve
+              a(href='https://onenote.zznnwn.cloudns.biz/') onedrive
+              a(href='https://gegewu-proxy.zznnwn.cloudns.biz/') ghproxy
+              a(href='https://chatgpt.com') chatgpt
+    .ft-item-2
+      p.ft-t 推荐友链
+      .ft-img-group
+        .img-group-item
+          a(href='https://vercel.com/')
+            img(src='https://gegewu-cloud.github.io/img/vercel.png' alt='')
+        .img-group-item
+          a(href='https://www.yyds.space/')
+            img(src='https://www.yyds.space/assets/r1.jpg' alt='')
+        .img-group-item
+          a(href='https://fe32.top/')
+            img(src='https://bu.dusays.com/2022/05/02/626f92e193879.jpg' alt='')
+        .img-group-item
+          a(href='https://github.com/gegewu-cloud')
+            img(src='https://gegewu-cloud.github.io/img/C.png' alt='')
+        .img-group-item
+          a(href='https://www.fomal.cc/')
+            img(src='https://sourcebucket.s3.bitiful.net/img/avatar.webp' alt='')
+        .img-group-item
+          a(href='https://qexo.zznnwn.cloudns.biz/')
+            img(src='https://unpkg.com/qexo-static@2.2.3/qexo/images/icon.png' alt='')
+        .img-group-item
+          a(href='https://chatgpt.com/')
+            img(src='https://wn.zznnwn.cloudns.biz/img/chatgpt.jpg' alt='')
+        .img-group-item
+          a(href='https://gegewu-cloud.github.io/')
+            img(src='https://gegewu-cloud.github.io/img/zznnlogo.webp' alt='')
+
+    .ft-item-3
+      p.ft-t 欢迎关注微信公众号🍡
+      .ft-img-group
+        .img-group-item
+          a(href='https://mp.weixin.qq.com/')
+            img(src='https://f005.backblazeb2.com/file/ZzNnWn-Images/ZzNnWn-Images/32669c3a-70bf-4466-87c4-b677eab7cc82.png' alt='')
+
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
+    else
+      .copyright!= `&copy;${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heartbeat"></i> ${config.author}`
+  if theme.footer.copyright
+    .framework-info
+      span= _p('footer.framework') + ' '
+      a(href='https://hexo.io')= 'Hexo'
+      span.footer-separator |
+      span= _p('footer.theme') + ' '
+      a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`
