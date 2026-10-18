@@ -123,4 +123,4 @@ python run_experiments.py --epochs 5 --batch-size 16 --max-length 256 --seed 42 
 
 ---
 
-**下一步**：Week7 的 CMeEE 医学 NER 训练正在补跑（BiLSTM-CRF 修复版 vs 原始写法 vs 无 CRF），结果出来后会再写一篇关于"手写 CRF 里的一个 `-10000` 偏移 bug"的文章，和这个 MoE 系列一起构成"微调方式 → 训多久 → 底层结构"的完整面试叙事。
+**相关阅读**：Week7 的 CMeEE 医学 NER 已经写完——[手写 BiLSTM-CRF 医学 NER 的 CRF bug 复盘](/2026/10/18/03bb875c/)，和这篇一起构成"微调方式 → 训多久 → 底层结构"的完整面试叙事。那篇用真实三模式实验说明：在这个任务上去掉 CRF 的 Softmax 反而全面占优。
