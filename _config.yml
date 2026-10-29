@@ -90,12 +90,12 @@ live2d:
   enable: false
 
 # Deployment 🔥 已换成你的 GitHub 地址
-# 注意：GitHub Pages 实际是从 gh-pages 分支提供服务的（不是 main），
-# 所以 deploy 目标分支设为 gh-pages，否则推到 main 线上站不会更新。
+# 注意：HYRX-TG.github.io 是「用户/组织页」，GitHub Pages 实际从 main 分支提供，
+# 所以 deploy 目标分支必须设为 main（不是 gh-pages），否则线上站不会更新。
 deploy:
   type: git
   repo: git@github.com:HYRX-TG/HYRX-TG.github.io.git
-  branch: gh-pages
+  branch: main
   force: true
 
 # 压缩配置 hexo-neat
